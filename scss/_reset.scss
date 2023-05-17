@@ -1,0 +1,17 @@
+*,*::before,*::after {
+  outline: 1px solid red;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+ul{
+  margin-bottom:0px;
+  padding-left:0px;
+}
+li {
+  list-style: none;
+}
+a {
+  margin-right: 0px;
+}
