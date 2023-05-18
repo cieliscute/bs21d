@@ -381,7 +381,8 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
-  6: $spacer * 4
+  6: $spacer * 4,
+  75: $spacer * .75
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -403,7 +404,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
+$body-bg:                   #FFFFFF  !default;
 $body-color:                $gray-900 !default;
 $body-text-align:           null !default;
 

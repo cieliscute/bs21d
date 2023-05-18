@@ -1,0 +1,15 @@
+.l-quote{
+  border-left:1px solid $primary;
+}
+.l-quote-bottom{
+  border-bottom:1px solid $primary;
+}
+
+// 給大標題使用的外觀，字體大小32px，行高1.75倍(56px)
+.l-text-32-56{
+  font-size: 32px;
+  line-height: 1.75em;
+}
+.l-btn-h52{
+  height: 52px;
+}

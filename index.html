@@ -4,26 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 新增字型粉圓體 -->
+    <script type="text/javascript">var _jf = _jf || [];_jf.push(['p','64690']);_jf.push(['initAction',true]);_jf.push(['_setFont','jf-openhuninn','css','jfoepn']);_jf.push(['_setFont','jf-openhuninn','alias','jf-openhuninn']);_jf.push(['_setFont','jf-openhuninn','weight',400]);(function(A,p,c,m,l,q,r,h,B,D){var b=A._jf;if(b.constructor!==Object){var t=!0,u=function(a){var f=!0,e;for(e in b)b[e][0]==a&&(f&&(f=f&&!1!==b[e][1].call(b)),b[e]=null,delete b[e])},v=/\S+/g,w=/[\t\r\n\f]/g,C=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,n="".trim,x=n&&!n.call("\ufeff\u00a0")?function(a){return null==a?"":n.call(a)}:function(a){return null==a?"":(a+"").replace(C,"")},k=function(a){var f,b,g;if("string"===typeof a&&a&&(a=(a||"").match(v)||[],f=h[c]?(" "+h[c]+" ").replace(w," "):" ")){for(g=0;b=a[g++];)0>f.indexOf(" "+b+" ")&&(f+=b+" ");h[c]=x(f)}},d=function(a){var b,e,g;if(0===arguments.length||"string"===typeof a&&a){var d=(a||"").match(v)||[];if(b=h[c]?(" "+h[c]+" ").replace(w," "):""){for(g=0;e=d[g++];)for(;0<=b.indexOf(" "+e+" ");)b=b.replace(" "+e+" "," ");h[c]=a?x(b):""}}},y;b.addScript=y=function(b,f,e,g,d,c){d=d||function(){};c=c||function(){};var a=p.createElement("script"),h=p.getElementsByTagName("script")[0],k,m=!1,l=function(){a.src="";a.parentNode.removeChild(a);a=a.onerror=a.onload=a.onreadystatechange=null};g&&(k=setTimeout(function(){l();c()},g));a.type=f||"text/javascript";a.async=e;a.onload=a.onreadystatechange=function(b,c){m||a.readyState&&!/loaded|complete/.test(a.readyState)||(m=!0,g&&clearTimeout(k),l(),c||d())};a.onerror=function(a,b,d){g&&clearTimeout(k);l();c();return!0};a.src=b;h.parentNode.insertBefore(a,h)};for(var z in b)"initAction"==b[z][0]&&(t=b[z][1]);b.push(["_eventPreload",function(){1==t&&k(m);y(B,null,!1,3E3,null,function(){u("_eventInactived")})}]);b.push(["_eventReload",function(){d(r);d(q);k(l)}]);b.push(["_eventActived",function(){d(m);d(l);k(q)}]);b.push(["_eventInactived",function(){d(m);d(l);k(r)}]);u("_eventPreload")}})(this,this.document,"className","jf-loading","jf-reloading","jf-active","jf-inactive",this.document.getElementsByTagName("html")[0],"//ds.justfont.com/js/stable/v/6.0/id/403624176418");</script>
+    <!-- google-material-icon -->
+    <!-- https://fonts.google.com/icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!--新增自己的css -->
     <link rel="stylesheet" href="./css/all.css">
-    <!-- 新增google font -->
     <title>BS21-拼拼</title>
   </head>
-  <body>
-    <!-- 最上方的導覽列，在lg(991px)的時候會收合 -->
+  <body class="bg-white">
+    <!-- 最上方的導覽列，在md(768px)的時候會收合 -->
     <header class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid px-0">
           <a class="navbar-brand" href="#">
             <img src="./assets/logo.jpg" width="111" alt="logo">
+            <h1 class="d-none">拼拼</h1>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-between">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 d-flex justify-content-between">
               <li class="nav-item d-flex justify-content-between">
-                <ul class="d-lg-flex  align-items-center">
+                <ul class="d-md-flex  align-items-center">
                   <li class="ms-lg-3 "><a href="" class="p-1">關於</a></li>
                   <li class="ms-lg-3 "><a href="" class="p-1">挖寶</a></li>
                   <li class="ms-lg-3 "><a href="" class="p-1">我有個大膽的想法</a></li>
@@ -43,14 +48,79 @@
     </header>
 
 
+    <!-- 除了最上方nav以外的都是在main中，會推出一個border-top當作邊線 -->
     <main class="border-top border-primary border-2">
-      <section class="project-page container pt-md-5 pb-md-6">
-        <div class="row">
-          <p class="tag">魔法科技</p>
+      <div class="project-page">
+        <section class=" container pt-md-5 pb-md-6">
+          <h2 class="mb-4">拍出會動的照片｜LivePhotos 魔法拍立得</h2>
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <img src="./assets/produt_image.jpg" alt="" class="">
+            </div>
+            <div class="col-12 col-md-5">
+              <p class="target-dolar mb-0">$600,000</p>
+              <h3 class="mb-0">$280,047</h3>
+              <div class="progress rounded-pill">
+                <div class="progress-bar bg-primary text-gray" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-6">
+                  <p class="text-dark people-count">贊助人數</p>
+                  <h4 class="l-text-32-56">1374人</h4>
+                </div>
+                <div class="col-6">
+                  <p class="text-dark deadline">募資倒數</p>
+                  <h4 class="l-text-32-56">27天</h4>
+                </div>
+              </div>
+              <ul class="d-flex justify-content-start">
+                <li><a href=""class="me-4"><img src="./assets/icon_good01.svg" alt="" ></a></li>
+                <li><a href=""class="me-4"><img src="./assets/icon_good02.svg" alt="" ></a></li>
+                <li><a href=""class="me-4"><img src="./assets/icon_good03.svg" alt="" ></a></li>
+                <li><a href=""class="me-4"><img src="./assets/icon_good04.svg" alt="" ></a></li>
+              </ul>
+              <div class="bg-white l-quote border-3 mt-3 fs-6 ps-3 py-3">
+                <p>專案募資中！</p>
+                <p class="">在 2021/06/14 23:59 募資結束前，您都可以贊助我們！</p>
+              </div>
+              <div class="d-grid mt-4">
+                <button type="button" class="l-btn-h52 btn btn-primary d-block rounded-pill mt-3 ">贊助專案</button>
+              </div>
+              <div class="row gx-1 mt-2">
+                <div class="col-7">
+                  <div class="d-grid">
+                    <button class="n-trace btn btn-outline-gray rounded-pill l-btn-h52 d-flex align-items-center justify-content-center"> <svg class="svg-icon heart" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path  d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z"/></svg> 追蹤專案</button>
+                  </div>
+                </div>
+                <div class="col-5">
+                  <div class="d-grid">
+                    <button class="btn btn-outline-gray rounded-pill l-btn-h52">追蹤專案</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+      </div>
+      <div class="selector">
+        <section class="tabs container">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link py-4 px-75 h-100 active" aria-current="page" href="#">專案介紹</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link py-4 px-75 h-100 " href="#">常見問答</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link py-4 px-75 h-100 " href="#">目前進度</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link py-4 px-75 h-100 ">留言</a>
+            </li>
+          </ul>
+        </section>
 
-      </section>
+      </div>
 
 
     </main>
