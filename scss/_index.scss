@@ -58,6 +58,9 @@
     line-height: 1.75;
   }
 }
+
+
+
 .selector{
   // 選單列的css
   .tabs{
@@ -99,7 +102,50 @@
         text-align: justify;
       }
     }
+    .card-footer{
+      svg{
+        max-height: 100%;
+        max-width:100%;
+        &.facebook{
+          fill:white;
+          width: 20px;
+          height: 20px;
+        }
+        &.youtube{
+          fill:white;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .contact{
+        span.material-symbols-outlined{
+          font-size: 14px;
+          font-weight: bolder;
+        }
+      }
+    }
 
+    h3.support{
+      font-size: 20px;
+      letter-spacing: 2px;
+      color:#494846;
+    }
+    .card{
+      h4{
+        &.title{
+          font-size: 18px;
+          color: #494846;
+          letter-spacing: 2px;
+          line-height: 1.5;
+        }
+        &.price{
+          font-size: 24px;
+          color: #494846;
+          letter-spacing: 0;
+          line-height: 1.75;
+        }
+      }
+    }
   }
 }
 

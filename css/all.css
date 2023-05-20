@@ -12282,10 +12282,6 @@ body {
   font-family: "jf-openhuninn";
 }
 
-*, *::before, *::after {
-  outline: 1px solid red;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -12325,13 +12321,54 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   border-top: 1px solid #E8E8DB;
 }
 
+.l-border-primary-x {
+  border-left: 3px solid #FFDF65;
+  border-right: 3px solid #FFDF65;
+  background-color: #f8f9fa;
+}
+
+.l-tag {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 2px 16px;
+  border-radius: 4px;
+  background-color: #858377;
+  color: white;
+  display: inline;
+}
+
+.l-tag-bg-lightgray {
+  background-color: #E8E8DB;
+  color: #858377;
+}
+
+.l-decoration-primary {
+  height: 2px;
+  background-color: #FFDF65;
+}
+
 .l-text-32-56 {
   font-size: 32px;
   line-height: 1.75em;
 }
 
+.l-text-24-36 {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.l-text-20-30 {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
 .l-btn-h52 {
   height: 52px;
+}
+
+.l-btn-h56-w172 {
+  height: 52px;
+  width: 172px;
 }
 
 .l-introduce-title {
@@ -12346,9 +12383,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   line-height: 2;
 }
 
-.l-icon-20-20 {
-  width: 20px;
-  height: 20px;
+.l-icon-30-30 {
+  width: 30px;
+  height: 30px;
+}
+
+.l-footer {
+  padding: 2rem 0px;
+  background-color: #494846;
+}
+
+.l-footer-text {
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
 }
 
 .btn-primary {
@@ -12420,4 +12469,39 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #373A3C;
   letter-spacing: 0.7px;
   text-align: justify;
+}
+.selector aside .card-footer svg {
+  max-height: 100%;
+  max-width: 100%;
+}
+.selector aside .card-footer svg.facebook {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+.selector aside .card-footer svg.youtube {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+.selector aside .card-footer .contact span.material-symbols-outlined {
+  font-size: 14px;
+  font-weight: bolder;
+}
+.selector aside h3.support, .selector aside .support.h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #494846;
+}
+.selector aside .card h4.title, .selector aside .card .title.h4 {
+  font-size: 18px;
+  color: #494846;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.selector aside .card h4.price, .selector aside .card .price.h4 {
+  font-size: 24px;
+  color: #494846;
+  letter-spacing: 0;
+  line-height: 1.75;
 }

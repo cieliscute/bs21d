@@ -8,14 +8,54 @@
   border-bottom: 1px solid #E8E8DB;
   border-top: 1px solid #E8E8DB;
 }
+.l-border-primary-x{
+  border-left:3px solid $primary;
+  border-right:3px solid $primary;
+  background-color: #f8f9fa;
+}
+// 給小tag使用的，例如在一開始的魔法科技＆aside中募資專案card中的"已被贊助ＸＸ次“使用
+.l-tag{
+  font-size: 12px;
+  line-height: 1.5;
+  padding:2px 16px;
+  border-radius:4px;
+  // 預設是灰色底白色字
+  background-color: $gray;
+  color:white;
+  display:inline;
+}
+.l-tag-bg-lightgray{
+  background-color: #E8E8DB;
+  color:$gray;
+}
+// 給form的贊助專案左右兩邊的線條使用的，會使用grow自適應伸縮
+.l-decoration-primary{
+  height: 2px;
+  background-color: $primary;
+
+}
+
+
 
 // 給大標題使用的外觀，字體大小32px，行高1.75倍(56px)
 .l-text-32-56{
   font-size: 32px;
   line-height: 1.75em;
 }
+.l-text-24-36{
+  font-size: 24px;
+  line-height: 1.5;
+}
+.l-text-20-30{
+  font-size: 20px;
+  line-height: 1.5;
+}
 .l-btn-h52{
   height: 52px;
+}
+.l-btn-h56-w172{
+  height:52px;
+  width:172px;
 }
 
 // 在主要畫面中，專案介紹區塊所使用的字體設定
@@ -30,7 +70,18 @@
   line-height: 2;
 }
 // 在aside中，facebook&youtube links的設定
-.l-icon-20-20{
-  width: 20px;
-  height: 20px;
+.l-icon-30-30{
+  width: 30px;
+  height: 30px;
+}
+
+.l-footer{
+  padding: 2rem 0px;
+  background-color: #494846;
+}
+.l-footer-text{
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.2px;
+  line-height: 1.5;
 }
