@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="./css/all.css">
     <title>BS21-拼拼</title>
   </head>
+
+
+
+
   <body class="bg-white">
     <!-- 最上方的導覽列，在md(768px)的時候會收合 -->
     <header class="container">
@@ -89,12 +93,12 @@
               <div class="row gx-1 mt-2">
                 <div class="col-7">
                   <div class="d-grid">
-                    <button class="n-trace btn btn-outline-gray rounded-pill l-btn-h52 d-flex align-items-center justify-content-center"> <svg class="svg-icon heart" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path  d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z"/></svg> 追蹤專案</button>
+                    <button class="n-trace btn btn-outline-gray rounded-pill l-btn-h52 d-flex align-items-center justify-content-center border-2"> <svg class="svg-icon heart" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path  d="m480 935-41-37q-106-97-175-167.5t-110-126Q113 549 96.5 504T80 413q0-90 60.5-150.5T290 202q57 0 105.5 27t84.5 78q42-54 89-79.5T670 202q89 0 149.5 60.5T880 413q0 46-16.5 91T806 604.5q-41 55.5-110 126T521 898l-41 37Z"/></svg> 追蹤專案</button>
                   </div>
                 </div>
                 <div class="col-5">
                   <div class="d-grid">
-                    <button class="btn btn-outline-gray rounded-pill l-btn-h52">追蹤專案</button>
+                    <button class="btn btn-outline-gray rounded-pill l-btn-h52 border-2">追蹤專案</button>
                   </div>
                 </div>
               </div>
@@ -103,25 +107,64 @@
         </section>
       </div>
       <div class="selector">
-        <section class="tabs container">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link py-4 px-75 h-100 active" aria-current="page" href="#">專案介紹</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link py-4 px-75 h-100 " href="#">常見問答</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link py-4 px-75 h-100 " href="#">目前進度</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link py-4 px-75 h-100 ">留言</a>
-            </li>
-          </ul>
+        <!-- 切換選單的區塊 -->
+        <div class="l-border-y">
+          <section class="tabs container">
+            <ul class="nav">
+              <li class="nav-item me-3">
+                <a class="nav-link py-4 px-75 h-100 active" aria-current="page" href="#">專案介紹</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link py-4 px-75 h-100 " href="#">常見問答</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link py-4 px-75 h-100 " href="#">目前進度</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link py-4 px-75 h-100 " href="#">留言</a>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- 專案介紹active的時候的內容 -->
+        <section class="introduce container">
+          <div class="row">
+            <div class="col-8 mt-5">
+              <div class=""><img src="./assets/p1.jpg" width="100%" alt="短髮妹子<3"></div>
+              <h2 class="l-introduce-title l-quote ps-3 mt-4 border-5">施了魔法的照片</h2>
+              <p class="l-introduce-content mt-1"> 受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+              <div class="mt-4"><img src="./assets/p2.jpg" width="100%" alt="相機+底片照"></div>
+              <h2 class="l-introduce-title l-quote ps-3 mt-4 border-5">留下當下的美好</h2>
+              <p class="l-introduce-content mt-1"> 受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+            </div>
+            <!-- 側邊欄start -->
+            <aside class="col-4 mt-5">
+              <!-- 商家卡片區域 -->
+              <div class="card d-blcok p-3">
+                <div class="card-header p-0 d-flex border-0 bg-white">
+                  <img src="./assets/store_img.jpg" width="100" alt="">
+                  <div class="div d-flex flex-column justify-content-center align-items-start w-100 ms-3 ">
+                    <p class="mb-2">缺錢事務所</p>
+                    <p>已發起 1 個專案</p>
+                  </div>
+                </div>
+                <div class="card-body p-0 mt-3">
+                  <p class="card-text">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+                </div>
+                <div class="card-footer p-0 mt-3">
+                  <div class="links">
+                    <!-- facebook的svg -->
+                    <div class="icon-wrap l-icon-20-20">
+                      <img src="./assets/facebook-f.svg" class="" width="40" alt="facebook的icon.svg">
+                    </div>
+                  </div>
+                  <div class="contact btn btn-outline-gray">聯絡我們</div>
+
+                </div>
+              </div>
+            </aside>
+          </div>
         </section>
-
-      </div>
-
 
     </main>
 

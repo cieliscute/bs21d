@@ -12282,6 +12282,10 @@ body {
   font-family: "jf-openhuninn";
 }
 
+*, *::before, *::after {
+  outline: 1px solid red;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -12316,6 +12320,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   border-bottom: 1px solid #FFDF65;
 }
 
+.l-border-y {
+  border-bottom: 1px solid #E8E8DB;
+  border-top: 1px solid #E8E8DB;
+}
+
 .l-text-32-56 {
   font-size: 32px;
   line-height: 1.75em;
@@ -12323,6 +12332,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 .l-btn-h52 {
   height: 52px;
+}
+
+.l-introduce-title {
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 1.92px;
+}
+
+.l-introduce-content {
+  font-size: 16px;
+  color: #494846;
+  line-height: 2;
+}
+
+.l-icon-20-20 {
+  width: 20px;
+  height: 20px;
 }
 
 .btn-primary {
@@ -12376,4 +12402,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 .selector .tabs a {
   color: #636057;
+}
+.selector aside .card-header div p:first-child {
+  font-size: 20px;
+  color: #494846;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+.selector aside .card-header div p:last-child {
+  font-size: 16px;
+  color: #373A3C;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+}
+.selector aside .card-body p {
+  font-size: 16px;
+  color: #373A3C;
+  letter-spacing: 0.7px;
+  text-align: justify;
 }

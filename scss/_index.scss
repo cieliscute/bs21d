@@ -62,7 +62,7 @@
   // 選單列的css
   .tabs{
     .active{
-        border-bottom:2px solid $primary;
+      border-bottom:2px solid $primary;
     }
     a{
       color:$dark;
@@ -74,4 +74,33 @@
   //目前進度的css
   //留言的css
   //側邊fixed的css
+  aside{
+    .card-header{
+      div{
+        p:first-child{
+          font-size: 20px;
+          color: #494846;
+          letter-spacing: 2px;
+          line-height: 1.5;
+        }
+        p:last-child{
+          font-size: 16px;
+          color: #373A3C;
+          letter-spacing: 0.7px;
+          line-height: 1.5;
+        }
+      }
+    }
+    .card-body{
+      p{
+        font-size: 16px;
+        color: #373A3C;
+        letter-spacing: 0.7px;
+        text-align: justify;
+      }
+    }
+
+  }
 }
+
+
