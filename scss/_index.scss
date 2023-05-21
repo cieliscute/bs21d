@@ -38,6 +38,21 @@
   }
 
 }
+.modal{
+  input{
+
+    background: #F7F7F7;
+  }
+  .register{
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 20px;
+    color:$gray;
+    .highlight{
+      color:#EE6723;
+    }
+  }
+}
 
 .project-page{
   // .project-tag{
@@ -57,6 +72,12 @@
     // line-height: 5;
     line-height: 1.75;
   }
+  ul li{
+    width: 24px;
+    height: 24px;
+    margin-right:24px;
+    cursor:pointer;
+  }
 }
 
 
@@ -69,6 +90,12 @@
     }
     a{
       color:$dark;
+    }
+    ul li{
+      &:hover{
+        background-color: $primary;
+      }
+
     }
   }
 

@@ -32,6 +32,10 @@
 .l-decoration-primary{
   height: 2px;
   background-color: $primary;
+}
+.l-decoration-loginmodal{
+  height: 2px;
+  background-color:#E8E8DB ;
 
 }
 
@@ -84,4 +88,8 @@
   color: #FFFFFF;
   letter-spacing: 0.2px;
   line-height: 1.5;
+}
+
+.l-card-shadow{
+  box-shadow: 0 0 8px 0 ;
 }
