@@ -90,6 +90,13 @@
   line-height: 1.5;
 }
 
+// Q&A問題區的卡片陰影效果
 .l-card-shadow{
-  box-shadow: 0 0 8px 0 ;
+  box-shadow: 0 0 8px 0 #494846 15%;
+}
+.l-question-number{
+  width: 28px;
+  height: 28px;
+  padding:0px;
+  background-color: $primary;
 }

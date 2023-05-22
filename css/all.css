@@ -12282,10 +12282,6 @@ body {
   font-family: "jf-openhuninn";
 }
 
-*, *::before, *::after {
-  outline: 1px solid red;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -12410,8 +12406,15 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .l-card-shadow {
-  -webkit-box-shadow: 0 0 8px 0;
-          box-shadow: 0 0 8px 0;
+  -webkit-box-shadow: 0 0 8px 0 #494846 15%;
+          box-shadow: 0 0 8px 0 #494846 15%;
+}
+
+.l-question-number {
+  width: 28px;
+  height: 28px;
+  padding: 0px;
+  background-color: #FFDF65;
 }
 
 .btn-primary {
