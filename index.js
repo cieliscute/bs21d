@@ -56,3 +56,22 @@ $(".question.question-6").click(function(){
     document.querySelector(".question-6 .question-arrow").textContent="expand_more";
   }
 });
+
+
+const ajax_change_area=document.getElementById('ajax-change-area');
+// console.log(ajax_change_area);
+const area1=document.querySelector('#selector-btn :nth-child(1)');
+const area2=document.querySelector('#selector-btn :nth-child(2)');
+const area3=document.querySelector('#selector-btn :nth-child(3)');
+const area4=document.querySelector('#selector-btn :nth-child(4)');
+console.log(area1,area2,area3,area4);
+area1.addEventListener('click',()=>{
+  fetch('./introduce.html')
+    .then(function (response) {
+      return response;
+    })
+    .then(function (data) {
+      console.log(data);
+      console.log('1');
+	})
+})

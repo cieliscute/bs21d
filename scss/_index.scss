@@ -1,98 +1,113 @@
 // 設定主色按鈕的hover
-.btn-primary{
-  color:$dark;
-  &:hover{
-    background-color:#ff785e;
-    color:#ffffff;
+.btn-primary {
+  color: $dark;
+
+  &:hover {
+    background-color: #ff785e;
+    color: #ffffff;
   }
 }
-.btn-outline-gray:hover{
-  background-color:$primary;
-  color:$gray;
-  border-color:$primary;
+
+.btn-outline-gray:hover {
+  background-color: $primary;
+  color: $gray;
+  border-color: $primary;
 }
 
 //設定material design的部分
-.svg-icon{
-  &.heart{
-    height:20px;
-    width:20px;
-    margin-right:8px;
-    fill:$gray;
+.svg-icon {
+  &.heart {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    fill: $gray;
   }
 }
+
 //指定按鈕的hover
-.n-trace:hover{
-  .svg-icon.heart{
-    fill:#ff785e;
+.n-trace:hover {
+  .svg-icon.heart {
+    fill: #ff785e;
   }
 }
 
 //其他
-.navbar{
-  .btn{
+.navbar {
+  .btn {
     width: 96px;
   }
-  a{
+
+  a {
     color: $dark;
   }
 
 }
-.modal{
-  input{
+
+.modal {
+  input {
 
     background: #F7F7F7;
   }
-  .register{
+
+  .register {
     font-size: 14px;
     letter-spacing: 0;
     line-height: 20px;
-    color:$gray;
-    .highlight{
-      color:#EE6723;
+    color: $gray;
+
+    .highlight {
+      color: #EE6723;
     }
   }
 }
 
-.project-page{
+.project-page {
   // .project-tag{
   //   font-size: 12px;
   //   height: 22px;
   //   width: 80px;
   // }
   background-color: $body-bgc;
-  .target-dolar{
+
+  .target-dolar {
     font-size: 14px;
   }
-  .people-count,.deadline{
+
+  .people-count,
+  .deadline {
     font-size: 14px;
   }
-  h3{
+
+  h3 {
     font-size: 32px;
     // line-height: 5;
     line-height: 1.75;
   }
-  ul li{
+
+  ul li {
     width: 24px;
     height: 24px;
-    margin-right:24px;
-    cursor:pointer;
+    margin-right: 24px;
+    cursor: pointer;
   }
 }
 
 
 
-.selector{
+.selector {
+
   // 選單列的css
-  .tabs{
-    .active{
-      border-bottom:2px solid $primary;
+  .tabs {
+    .active {
+      border-bottom: 2px solid $primary;
     }
-    a{
-      color:$dark;
+
+    a {
+      color: $dark;
     }
-    ul li{
-      &:hover{
+
+    ul li {
+      &:hover {
         background-color: $primary;
       }
 
@@ -103,18 +118,50 @@
 
   //常見問答的css
   //目前進度的css
+  .currentprogress {
+    .card {
+      .more {
+        color: #FF785E;
+        font-size: 14px;
+        line-height: 24px;
+
+      }
+    }
+
+  }
+
   //留言的css
+  .message {
+    .l-quote {
+      a {
+        color: $code ;
+
+        &:hover {
+          color: darken($code, 20%);
+        }
+      }
+    }
+    .card-body {
+      background-color: #f8f9fa;
+      .card-title {
+        color: $code;
+      }
+    }
+
+  }
+
   //側邊fixed的css
-  aside{
-    .card-header{
-      div{
-        p:first-child{
+  aside {
+    .card-header {
+      div {
+        p:first-child {
           font-size: 20px;
           color: #494846;
           letter-spacing: 2px;
           line-height: 1.5;
         }
-        p:last-child{
+
+        p:last-child {
           font-size: 16px;
           color: #373A3C;
           letter-spacing: 0.7px;
@@ -122,51 +169,58 @@
         }
       }
     }
-    .card-body{
-      p{
+
+    .card-body {
+      p {
         font-size: 16px;
         color: #373A3C;
         letter-spacing: 0.7px;
         text-align: justify;
       }
     }
-    .card-footer{
-      svg{
+
+    .card-footer {
+      svg {
         max-height: 100%;
-        max-width:100%;
-        &.facebook{
-          fill:white;
+        max-width: 100%;
+
+        &.facebook {
+          fill: white;
           width: 20px;
           height: 20px;
         }
-        &.youtube{
-          fill:white;
+
+        &.youtube {
+          fill: white;
           width: 20px;
           height: 20px;
         }
       }
-      .contact{
-        span.material-symbols-outlined{
+
+      .contact {
+        span.material-symbols-outlined {
           font-size: 14px;
           font-weight: bolder;
         }
       }
     }
 
-    h3.support{
+    h3.support {
       font-size: 20px;
       letter-spacing: 2px;
-      color:#494846;
+      color: #494846;
     }
-    .card{
-      h4{
-        &.title{
+
+    .card {
+      h4 {
+        &.title {
           font-size: 18px;
           color: #494846;
           letter-spacing: 2px;
           line-height: 1.5;
         }
-        &.price{
+
+        &.price {
           font-size: 24px;
           color: #494846;
           letter-spacing: 0;
@@ -176,5 +230,3 @@
     }
   }
 }
-
-
