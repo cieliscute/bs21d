@@ -10965,8 +10965,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
+@font-face {
   font-family: "jf-openhuninn";
+  src: url("../assets/jf-openhuninn-2.0.ttf") format("truetype");
+}
+body {
+  font-family: "jf-openhuninn", sans-serif;
 }
 
 img {
