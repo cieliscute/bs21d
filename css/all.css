@@ -10973,6 +10973,10 @@ body {
   font-family: "jf-openhuninn", sans-serif;
 }
 
+*, *::before, *::after {
+  outline: 1px solid red;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -11179,6 +11183,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .selector .tabs a {
   color: #636057;
 }
+@media (max-width: 400px) {
+  .selector .tabs ul li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
 .selector .tabs ul li:hover {
   background-color: #FFDF65;
 }
@@ -11217,16 +11227,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   letter-spacing: 0.7px;
   text-align: justify;
 }
-.selector aside .card-footer svg {
+.selector aside .card-footer .icon-wrap:hover {
+  background-color: #FF785E !important;
+}
+.selector aside .card-footer .icon-wrap svg {
   max-height: 100%;
   max-width: 100%;
 }
-.selector aside .card-footer svg.facebook {
+.selector aside .card-footer .icon-wrap svg.facebook {
   fill: white;
   width: 20px;
   height: 20px;
 }
-.selector aside .card-footer svg.youtube {
+.selector aside .card-footer .icon-wrap svg.youtube {
   fill: white;
   width: 20px;
   height: 20px;

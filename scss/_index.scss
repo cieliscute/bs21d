@@ -99,14 +99,18 @@
   // 選單列的css
   .tabs {
     .active {
-      border-bottom: 2px solid $primary;
+      border-bottom: 2px solid #FFDF65;
     }
-
     a {
       color: $dark;
     }
 
     ul li {
+      @media(max-width:400px){
+        font-size: 14px;
+        line-height: 1.5;
+
+      }
       &:hover {
         background-color: $primary;
       }
@@ -141,8 +145,10 @@
         }
       }
     }
+
     .card-body {
       background-color: #f8f9fa;
+
       .card-title {
         color: $code;
       }
@@ -153,6 +159,8 @@
   //側邊fixed的css
   aside {
     .card-header {
+      @media(max-width:767px){
+      }
       div {
         p:first-child {
           font-size: 20px;
@@ -160,13 +168,13 @@
           letter-spacing: 2px;
           line-height: 1.5;
         }
-
         p:last-child {
           font-size: 16px;
           color: #373A3C;
           letter-spacing: 0.7px;
           line-height: 1.5;
         }
+        
       }
     }
 
@@ -180,20 +188,24 @@
     }
 
     .card-footer {
-      svg {
-        max-height: 100%;
-        max-width: 100%;
-
-        &.facebook {
-          fill: white;
-          width: 20px;
-          height: 20px;
+      .icon-wrap {
+        &:hover{
+          background-color: $code !important;
         }
+        svg {
+          max-height: 100%;
+          max-width: 100%;
+          &.facebook {
+            fill: white;
+            width: 20px;
+            height: 20px;
+          }
 
-        &.youtube {
-          fill: white;
-          width: 20px;
-          height: 20px;
+          &.youtube {
+            fill: white;
+            width: 20px;
+            height: 20px;
+          }
         }
       }
 
