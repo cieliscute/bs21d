@@ -11152,7 +11152,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .scrollToBottom {
   height: 44px;
   background-color: #FFDF65;
-  transition: opacity 0.5s linear;
+  transition: height 0.3s linear, opacity 0.3s linear;
+}
+.scrollToBottom.show {
+  height: 44px;
+  opacity: 1;
+  visibility: visible;
+}
+.scrollToBottom.hide {
+  height: 0px;
+  opacity: 0;
+  visibility: none;
 }
 .scrollToBottom:hover {
   background-color: #FF785E;

@@ -34,14 +34,14 @@ window.addEventListener('resize', togglePopover);
 
 const scrollToBottom = document.querySelector('.scrollToBottom');
 window.addEventListener('scroll', (e) => {
-  // if(window.innerHeight>768){return;}
-  if (window.scrollY > 2000){
-  scrollToBottom.classList.add('opacity-0');
-  scrollToBottom.classList.remove('opacity-100');
-}else {
-  scrollToBottom.classList.add('opacity-100');
-  scrollToBottom.classList.remove('opacity-0');
-}
+  if (window.innerHeight > 768) { return; }
+  if (window.scrollY > 2000) {
+    scrollToBottom.classList.add("hide");
+  scrollToBottom.classList.remove("show");
+  } else if(window.scrollY<1000){
+    scrollToBottom.classList.add("show");
+    scrollToBottom.classList.remove("hide");
+  }
 })
 
 

@@ -45,7 +45,17 @@
 .scrollToBottom {
   height: 44px;
   background-color: $primary;
-  transition:opacity .5s linear;
+  transition:height .3s linear,opacity .3s linear ;
+  &.show{
+    height: 44px;
+    opacity: 1;
+    visibility:visible;
+  }
+  &.hide{
+    height: 0px;
+    opacity: 0;
+    visibility: none;
+  }
 
   &:hover {
     background-color: $code;
