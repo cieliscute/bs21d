@@ -10971,6 +10971,7 @@ textarea.form-control-lg {
 }
 body {
   font-family: "jf-openhuninn", sans-serif;
+  scroll-behavior: smooth;
 }
 
 img {
