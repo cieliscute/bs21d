@@ -40,6 +40,24 @@
   a {
     color: $dark;
   }
+}
+
+.scrollToBottom {
+  height: 44px;
+  background-color: $primary;
+  transition:opacity .5s linear;
+
+  &:hover {
+    background-color: $code;
+  }
+
+  a {
+    color: $dark;
+    &:hover,
+    &:active {
+      color:darken($dark,10%);
+    }
+  }
 
 }
 
@@ -89,6 +107,27 @@
     height: 24px;
     margin-right: 24px;
     cursor: pointer;
+
+    img {
+      width: 100%;
+
+      @include custom(991px) {
+        width: auto;
+      }
+    }
+
+    [data-bs-toggle="popover"]+span {
+      @include custom(400px) {
+        font-size: 14px;
+      }
+    }
+
+
+    @include custom (991px) {
+      margin-right: 0px;
+      width: auto;
+      cursor: default;
+    }
   }
 }
 
@@ -101,16 +140,18 @@
     .active {
       border-bottom: 2px solid #FFDF65;
     }
+
     a {
       color: $dark;
     }
 
     ul li {
-      @media(max-width:400px){
+      @media(max-width:400px) {
         font-size: 14px;
         line-height: 1.5;
 
       }
+
       &:hover {
         background-color: $primary;
       }
@@ -159,22 +200,39 @@
   //側邊fixed的css
   aside {
     .card-header {
-      @media(max-width:767px){
+      img {
+        @include custom(991px) {
+          width: 80px;
+          height: 80px;
+
+        }
       }
+
       div {
         p:first-child {
           font-size: 20px;
           color: #494846;
           letter-spacing: 2px;
           line-height: 1.5;
+
+          @include custom(991px) {
+            font-size: 15px;
+            line-height: 1.5;
+            letter-spacing: 1px;
+          }
         }
+
         p:last-child {
           font-size: 16px;
           color: #373A3C;
           letter-spacing: 0.7px;
           line-height: 1.5;
+
+          @include custom(991px) {
+            font-size: 12px;
+          }
         }
-        
+
       }
     }
 
@@ -189,12 +247,14 @@
 
     .card-footer {
       .icon-wrap {
-        &:hover{
+        &:hover {
           background-color: $code !important;
         }
+
         svg {
           max-height: 100%;
           max-width: 100%;
+
           &.facebook {
             fill: white;
             width: 20px;

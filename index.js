@@ -1,3 +1,27 @@
+// 在螢幕寬度小於991px時禁用 Popover
+function togglePopover() {
+  const popovers = document.querySelectorAll('[data-bs-toggle="popover"]');
+  const windowWidth = window.innerWidth;
+
+  popovers.forEach((popover) => {
+    const popoverInstance = bootstrap.Popover.getInstance(popover);
+
+    if (windowWidth < 991) {
+      popoverInstance.disable();
+    } else {
+      popoverInstance.enable();
+    }
+  });
+}
+
+// 載入頁面時進行初始設定
+togglePopover();
+
+// 監聽視窗大小變化事件
+window.addEventListener('resize', togglePopover);
+
+
+
 // $(document).ready(function(){
 // $("#answer1").slideUp(,$(".question-1>.question-arrow").text("expand_less"));
 // $("#answer1").slideDown(,$(".question-1>.question-arrow").text("expand_less"));
@@ -7,6 +31,19 @@
 // $("#answer5").slideUp();
 // $("#answer6").slideUp();
 // });
+
+const scrollToBottom = document.querySelector('.scrollToBottom');
+window.addEventListener('scroll', (e) => {
+  // if(window.innerHeight>768){return;}
+  if (window.scrollY > 2000){
+  scrollToBottom.classList.add('opacity-0');
+  scrollToBottom.classList.remove('opacity-100');
+}else {
+  scrollToBottom.classList.add('opacity-100');
+  scrollToBottom.classList.remove('opacity-0');
+}
+})
+
 
 function handleContentReplacement() {
   $(".question.question-1").click(function () {
@@ -72,12 +109,12 @@ const area4 = document.querySelector('#selector-btn :nth-child(4)');
 
 const btn1 = document.getElementById('btn');
 const changeDiv = document.getElementById('change');
-const allbtn=document.querySelectorAll('#selector-btn a');
+const allbtn = document.querySelectorAll('#selector-btn a');
 console.log(allbtn);
 
 
 area1.addEventListener('click', (e) => {
-  allbtn.forEach((item,index)=>{
+  allbtn.forEach((item, index) => {
     item.classList.remove('active');
   })
   e.target.classList.add('active');
@@ -91,7 +128,7 @@ area1.addEventListener('click', (e) => {
 });
 
 area2.addEventListener('click', (e) => {
-  allbtn.forEach((item,index)=>{
+  allbtn.forEach((item, index) => {
     item.classList.remove('active');
   })
   e.target.classList.add('active');
@@ -105,7 +142,7 @@ area2.addEventListener('click', (e) => {
     })
 });
 area3.addEventListener('click', (e) => {
-  allbtn.forEach((item,index)=>{
+  allbtn.forEach((item, index) => {
     item.classList.remove('active');
   })
   e.target.classList.add('active');
@@ -118,7 +155,7 @@ area3.addEventListener('click', (e) => {
     })
 });
 area4.addEventListener('click', (e) => {
-  allbtn.forEach((item,index)=>{
+  allbtn.forEach((item, index) => {
     item.classList.remove('active');
   })
   e.target.classList.add('active');

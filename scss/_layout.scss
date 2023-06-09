@@ -23,6 +23,12 @@
   background-color: $gray;
   color:white;
   display:inline;
+  @include custom(991px){
+    padding:2px 8px;
+  }
+  @include pad{
+   padding:2px 16px;
+  }
 }
 .l-tag-bg-lightgray{
   background-color: #E8E8DB;

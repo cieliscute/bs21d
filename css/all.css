@@ -10973,10 +10973,6 @@ body {
   font-family: "jf-openhuninn", sans-serif;
 }
 
-*, *::before, *::after {
-  outline: 1px solid red;
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -11030,6 +11026,16 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-color: #858377;
   color: white;
   display: inline;
+}
+@media (max-width: 991px) {
+  .l-tag {
+    padding: 2px 8px;
+  }
+}
+@media (max-width: 767px) {
+  .l-tag {
+    padding: 2px 16px;
+  }
 }
 
 .l-tag-bg-lightgray {
@@ -11143,6 +11149,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: #636057;
 }
 
+.scrollToBottom {
+  height: 44px;
+  background-color: #FFDF65;
+  transition: opacity 0.5s linear;
+}
+.scrollToBottom:hover {
+  background-color: #FF785E;
+}
+.scrollToBottom a {
+  color: #636057;
+}
+.scrollToBottom a:hover, .scrollToBottom a:active {
+  color: #48463f;
+}
+
 .modal input {
   background: #F7F7F7;
 }
@@ -11175,6 +11196,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   height: 24px;
   margin-right: 24px;
   cursor: pointer;
+}
+.project-page ul li img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .project-page ul li img {
+    width: auto;
+  }
+}
+@media (max-width: 400px) {
+  .project-page ul li [data-bs-toggle=popover] + span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 991px) {
+  .project-page ul li {
+    margin-right: 0px;
+    width: auto;
+    cursor: default;
+  }
 }
 
 .selector .tabs .active {
@@ -11209,17 +11250,35 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .selector .message .card-body .card-title {
   color: #FF785E;
 }
+@media (max-width: 991px) {
+  .selector aside .card-header img {
+    width: 80px;
+    height: 80px;
+  }
+}
 .selector aside .card-header div p:first-child {
   font-size: 20px;
   color: #494846;
   letter-spacing: 2px;
   line-height: 1.5;
 }
+@media (max-width: 991px) {
+  .selector aside .card-header div p:first-child {
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+}
 .selector aside .card-header div p:last-child {
   font-size: 16px;
   color: #373A3C;
   letter-spacing: 0.7px;
   line-height: 1.5;
+}
+@media (max-width: 991px) {
+  .selector aside .card-header div p:last-child {
+    font-size: 12px;
+  }
 }
 .selector aside .card-body p {
   font-size: 16px;
