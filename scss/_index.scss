@@ -22,12 +22,24 @@
     margin-right: 8px;
     fill: $gray;
   }
+  &.share{
+    height: 20px;
+    width: 20px;
+    margin-right: 8px ;
+    fill:$gray;
+
+  }
 }
 
 //指定按鈕的hover
 .n-trace:hover {
   .svg-icon.heart {
     fill: #ff785e;
+  }
+}
+.n-share:hover{
+  .svg-icon.share{
+    fill:#FF785E
   }
 }
 
